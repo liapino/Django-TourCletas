@@ -28,9 +28,6 @@ def register(request):
     return render(request, 'registration/register.html', context)
 
 
-def catalogo(request):
-    return HttpResponse("Catalogo")
-
 def reserva(request):
     return HttpResponse("Reserva")
 
