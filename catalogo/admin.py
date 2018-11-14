@@ -5,3 +5,5 @@ from catalogo.models import *
 
 admin.site.register(Bicicleta)
 admin.site.register(Equipamiento)
+admin.site.register(Catalogo)
+admin.site.register(Sede)

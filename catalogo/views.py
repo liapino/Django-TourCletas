@@ -1,15 +1,25 @@
 from django.shortcuts import render, redirect
 from .models import Bicicleta
 from django.shortcuts import get_object_or_404
+from .models import Catalogo
+
 
 # Create your views here.
 
 def catalogo(request):
     template_name = "catalogo/catalogo.html"
-    #print (Bicicleta.objects.all)
-    #bicicleta = get_object_or_404(Bicicleta, marca = 'bianchi')
-    for x in Bicicleta.objects.all():
-        print (x.aro)
+    #catalogo = Catalogo.objects.all()
+    
+    for i in Catalogo.objects.all():
+        print("---------")
+        print (i.bicicleta.marca)
+    
+    return render(request, template_name, {'catalogo':Catalogo.objects.all()})
 
-    #print (bicicleta.aro)
-    return render(request, template_name, {'catalogo':catalogo})
+"""
+def editar_post(request):
+    template_name = "index.html"
+    if request.POST:
+        formulario = edit_post(request.POST, request.FILES)
+    return render(request, template_name, {})
+"""
