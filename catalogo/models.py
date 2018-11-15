@@ -16,7 +16,7 @@ class Bicicleta(models.Model):
     estado = models.PositiveIntegerField(null=True, blank=True)
     ubicacion = models.CharField(max_length = 100, default=None)
     precio = models.PositiveIntegerField(null=True, blank=True)
-    tipo_bicicleta = models.CharField(max_length = 20, default=None, choices = CATEGORIA_BICI_CHOICES)
+    tipo_bicicleta = models.CharField(max_length = 20, null=True, blank=True, choices = CATEGORIA_BICI_CHOICES)
     imagen = models.ImageField(upload_to = 'imagenes_bicicletas', null=True, blank=True)
 
     def __str__(self):
