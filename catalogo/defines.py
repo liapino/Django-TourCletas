@@ -18,3 +18,19 @@ CATEGORIA_EQUIPAMIENTO_CHOICES =(
     ('HR', 'Herramientas'),
 
 )
+
+ESTADO_BICI_CHOICES =(
+    ('DI', 'Disponible'),
+    ('NO', 'No diponible'),
+    ('MA', 'Mantencion'),
+    ('RS', 'Reservado'),
+
+)
+
+ESTADO_EQUIPAMIENTO_CHOICES =(
+    ('DI', 'Disponible'),
+    ('NO', 'No diponible'),
+    ('MA', 'Mantencion'),
+    ('RS', 'Reservado'),
+
+)

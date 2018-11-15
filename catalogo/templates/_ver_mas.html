@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style class="cp-pen-styles">body{
+            background: #ccc;
+          }
+          </style>
+          
+</head>
+<body>
+        <figure>
+                <canvas id="clear-day" width="64" height="64">
+                </canvas>
+        
+                <canvas id="clear-night" width="64" height="64">
+                </canvas>
+        
+                <canvas id="partly-cloudy-day" width="64" height="64">
+                </canvas>
+        
+                <canvas id="partly-cloudy-night" width="64" height="64">
+                </canvas>
+        
+                <canvas id="cloudy" width="64" height="64">
+                </canvas>
+        
+                <canvas id="rain" width="64" height="64">
+                </canvas>
+        
+                <canvas id="sleet" width="64" height="64">
+                </canvas>
+        
+                <canvas id="snow" width="64" height="64">
+                </canvas>
+        
+                <canvas id="wind" width="64" height="64">
+                </canvas>
+        
+                <canvas id="fog" width="64" height="64">
+                </canvas>
+        </figure>
+        <script src="//static.codepen.io/assets/common/stopExecutionOnTimeout-41c52890748cd7143004e05d3c5f786c66b19939c4500ce446314d1748483e13.js"></script><script src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/skycons/1396634940/skycons.js"></script>
+        <script>var icons = new Skycons({ "color": "rgba(255, 255, 255, .8)" }),
+        list = [
+        "clear-day", "clear-night", "partly-cloudy-day",
+        "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
+        "fog"],
+        
+        i;
+        
+        for (i = list.length; i--;) {if (window.CP.shouldStopExecution(0)) break;
+          icons.set(list[i], list[i]);
+        }window.CP.exitedLoop(0);
+        icons.play();
+        //# sourceURL=pen.js
+        </script>
+</body>
+</html>

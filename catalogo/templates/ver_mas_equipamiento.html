@@ -1,0 +1,13 @@
+{% extends "core/base.html" %}
+{% block tourcletas %}
+<div class="col-lg-4 col-sm-6 portfolio-item">
+        <div class="card h-100">
+          <a href="#"><img class="card-img-top" src="{{equipamiento.imagen_equipamiento.url}}" alt=""></a>
+          <div class="card-body">
+            <h4 class="card-title">
+              <a href="#">{{equipamiento.tipo_equipamiento}}</a>
+            </h4>
+          </div>
+        </div>
+</div>
+{% endblock %}
