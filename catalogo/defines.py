@@ -5,9 +5,7 @@ CATEGORIA_BICI_CHOICES =(
 )
 
 CATEGORIA_CATALOGO_CHOICES =(
-    ('MONT', 'Montaña'),
-    ('URB', 'Urbana'),
-    ('RU', 'Ruta'),
+    ('BICI', 'Bicicleta'),
     ('EQUIP', 'Equipamiento'),
 )
 

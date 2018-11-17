@@ -1,5 +1,5 @@
 from django.contrib import admin
-from catalogo.models import Bicicleta, Equipamiento, Sede
+from catalogo.models import Bicicleta, Equipamiento, Sede, Catalogo
 
 @admin.register(Bicicleta)
 class bicicletaAdmin(admin.ModelAdmin):
@@ -13,4 +13,6 @@ class equipamientoAdmin(admin.ModelAdmin):
 class sedeAdmin(admin.ModelAdmin):
 	list_display = ('nombre_sede','ciudad_sede',)
 
-
+@admin.register(Catalogo)
+class sedeAdmin(admin.ModelAdmin):
+	list_display = ('codigo','tipo_catalogo',)
